@@ -73,17 +73,17 @@ public class SecureString implements CharSequence {
         return "Secure:XXXXX";
     }
 
-    /**
-     * Called by garbage collector.
-     * <p>
-     * {@inheritDoc}
-     */
-    @SuppressWarnings("deprecation")
-    @Override
-    public void finalize() throws Throwable {
-        clear();
-        super.finalize();
-    }
+//    /**
+//     * Called by garbage collector.
+//     * <p>
+//     * {@inheritDoc}
+//     */
+//    @SuppressWarnings("deprecation")
+//    @Override
+//    public void finalize() throws Throwable {
+//        clear();
+//        super.finalize();
+//    }
 
     /**
      * Randomly pad the characters to not store the real character in memory.
